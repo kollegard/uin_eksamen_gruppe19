@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -12,9 +11,10 @@ function App() {
     const data = await response.json()
 
     setGames(data.results)
-
-    console.log(games) 
+  // hentet fra Mathias Kollegård sitt arbeidskrav 4
   }
+
+  console.log(games)
 
 useEffect(() => {
   info()
