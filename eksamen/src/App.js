@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
@@ -25,7 +26,7 @@ useEffect(() => {
 
   return (
     <div className="App">
-      
+      <Dashboard></Dashboard>
     </div>
   );
 }
