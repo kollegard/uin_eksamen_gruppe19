@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Dashboard from './components/Dashboard';
 
 function App() {
 
@@ -7,13 +8,16 @@ function App() {
 
   
   const info = async() =>{
-    const response = await fetch (`https://api.rawg.io/api/platforms?key=a9cc790b6f6e4c0481c8687987fea064`)
+    const response = await fetch (`https://api.rawg.io/api/games?key=a9cc790b6f6e4c0481c8687987fea064&platforms=4`)
+    //https://rapidapi.com/accujazz/api/rawg-video-games-database/discussions/14722
     const data = await response.json()
+    //id 4 er pc
 
     setGames(data.results)
-  // hentet fra Mathias Kollegård sitt arbeidskrav 4
   }
+  // hentet fra Mathias Kollegård sitt arbeidskrav 4
 
+  
   console.log(games)
 
 useEffect(() => {
@@ -24,9 +28,7 @@ useEffect(() => {
 
 
   return (
-    <div className="App">
-      
-    </div>
+    <Dashboard games={games}/>
   );
 }
 
