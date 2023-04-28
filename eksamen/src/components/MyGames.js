@@ -1,8 +1,8 @@
 import Gamecard from "./Gamecard";
 
-export default function MyGames({name, photo}){
+export default function MyGames({games}){
 
     return(
-        <Gamecard/>
+        <Gamecard games={games}/>
     )
 }

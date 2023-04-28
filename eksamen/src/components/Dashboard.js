@@ -27,12 +27,12 @@ export default function Dashboard({games}){
             <section>
                 <h2>My Games</h2>
                 <button>My Games</button>
-                <MyGames/>
+                <MyGames games={games}/>
             </section>
 
             <aside>
                 <h3>Favorites</h3>
-                <MyFavorites/>
+                <MyFavorites games={games}/>
                 <button>My Favorites</button>
             </aside>
 

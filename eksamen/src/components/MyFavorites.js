@@ -1,7 +1,7 @@
 import Gamecard from "./Gamecard";
 
-export default function MyFavorites(){
+export default function MyFavorites({games}){
     return(
-        <Gamecard/>
+        <Gamecard games={games}/>
     )
 }
