@@ -1,8 +1,8 @@
-export default function MyGames({name, photo}){
-console.log(name)
+import Gamecard from "./Gamecard";
 
-    return(<>
-    <p>{name}</p>
-    <img src={photo} alt= {`bilde av ${name}`}/>
-    <button>Buy now</button></>)
+export default function MyGames({name, photo}){
+
+    return(
+        <Gamecard/>
+    )
 }
