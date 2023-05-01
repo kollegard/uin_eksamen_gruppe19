@@ -18,15 +18,13 @@ function App() {
   console.log(games)
 
 useEffect(() => {
-  info()
+   info()
   }, [])
   //https://legacy.reactjs.org/docs/hooks-effect.html
 
-
-
   return (
     <div className="App">
-      <Dashboard></Dashboard>
+        <Dashboard gameArray={games}></Dashboard>
     </div>
   );
 }
