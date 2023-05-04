@@ -1,4 +1,5 @@
 import './App.css';
+import GameShop from './components/GameShop';
 
 function App() {
 
@@ -6,9 +7,11 @@ function App() {
 
 
   return (
-    <div className="App">
+
+
+      <GameShop/>
       
-    </div>
+    
   );
 }
 
