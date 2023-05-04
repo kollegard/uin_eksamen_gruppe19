@@ -1,4 +1,5 @@
 import {store, mygames} from "./games"
+import MyFavorites from "./MyFavorites"
 export default function GameShop(){
     return(<>
 
@@ -16,7 +17,8 @@ export default function GameShop(){
         }
         </ul>
         
-        </section>    
+        </section>
+        <MyFavorites/>    
     
     </>)
 }
