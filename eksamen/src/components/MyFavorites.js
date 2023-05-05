@@ -1,28 +1,17 @@
 import {store, mygames} from "./games"
+import React,{useState } from 'react';
 export default function MyFavorites(){
+    const [slice,setSlice] = useState(2)
 
-    const showAllFavourites = () => {return(<section>
-        <h3>My favorites</h3>
+    const showAllFavorites = () => {setSlice(mygames.filter((games)=>games.fav===true).length)}
 
-        <ul>
-        {
-            mygames.filter((games) => games.fav === true).slice(0,2).map((games) => (
-                 
-                <>
-                 <li> <h2>{games.title}</h2></li>
-                 <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
-                </>
-            ))
-        }
-        </ul>
-        </section>)}
     return(
-    <section>
+    <section id="favorites">
         <h3>My favorites</h3>
 
-        <ul>
+        <ul id="favoritelist">
         {
-            mygames.filter((games) => games.fav === true).slice(0,2).map((games) => (
+            mygames.filter((games) => games.fav === true).slice(0,slice).map((games) => (
                  
                 <>
                  <li> <h2>{games.title}</h2></li>
@@ -31,7 +20,6 @@ export default function MyFavorites(){
             ))
         }
         </ul>
-        <button onClick={showAllFavourites}>Go to favorites</button>
-        
-        </section>    )
+        <button id="favoritebtn" onClick={showAllFavorites}>Go to favorites</button>
+    </section>    )
 }
