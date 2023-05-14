@@ -1,5 +1,6 @@
 import {store, mygames} from "./games"
 import MyFavorites from "./MyFavorites"
+import { NavLink } from "react-router-dom";
 export default function GameShop(){
     return(<>
 
@@ -20,7 +21,5 @@ export default function GameShop(){
         </ul>
         
         </section>
-        <MyFavorites/>    
-    
     </>)
 }
