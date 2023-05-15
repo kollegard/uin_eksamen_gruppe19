@@ -18,7 +18,7 @@ function App() {
        <Route path='/' element={<Dashboard/>}/>
        <Route path='GameShop' element={<GameShop/>}/>
        <Route path="MyFavorites" element={<MyFavorites sliceVal={mygames.filter((games)=>games.fav===true).length}/>}/>
-       <Route path='MyGames' element={<MyGames/>}/>
+       <Route path='MyGames' element={<MyGames games={mygames}/>}/>
       </Routes>
     </div>
     

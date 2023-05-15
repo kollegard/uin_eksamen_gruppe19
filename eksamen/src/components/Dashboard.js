@@ -12,7 +12,7 @@ export default function Dashboard(){
             <MyFavorites sliceVal={2}/>
             <NavLink key={"fav"} to={"MyFavorites"}><button id="favnavlinkbtn">Go to favorites</button></NavLink>
 
-            <MyGames/>
+            <MyGames games={mygames}/>
             <NavLink key={"mygames"} to={"MyGames"}><button id="mygameslinkbtn">Go to my games</button></NavLink>
         </div>
     )
