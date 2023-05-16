@@ -1,6 +1,7 @@
 import {store, mygames} from "./games"
 import React,{useState } from 'react';
 export default function MyFavorites({sliceVal}){
+    
     const [slice,setSlice] = useState(sliceVal)
 
     return(

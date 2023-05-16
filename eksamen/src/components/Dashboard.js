@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 export default function Dashboard(){
     return(
         <div id="dashboard">
-            <GameShop/>
+            <GameShop sliceVal={3}/>
             <NavLink key={"gameshop"} to={"GameShop"}><button id="gameshoplinkbtn">Go to gameshop</button></NavLink>
 
             <MyFavorites sliceVal={2}/>

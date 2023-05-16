@@ -1,9 +1,14 @@
+li {
+  list-style: none;
+}
+
 nav {
   background-color: #2f2f2f;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 4rem;
 }
 nav ul {
   flex-wrap: wrap;
