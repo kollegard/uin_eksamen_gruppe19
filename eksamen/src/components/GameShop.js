@@ -3,7 +3,7 @@ import MyFavorites from "./MyFavorites"
 export default function GameShop(){
     return(<>
 
-        <section>
+        <section id="gameShop">
         <h2>Game Shop</h2>
 
         <ul>
@@ -12,7 +12,7 @@ export default function GameShop(){
                 <>
                 <li> <h2>{games.title}</h2></li>
                 <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
-                <a href={games.link}><button>Buy game</button></a>
+                <a href={games.link}><button>Kjøp spill</button></a>
                 
                 </>
             ))

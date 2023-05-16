@@ -2,7 +2,7 @@ import React from "react";
 
 const MyGames = ({games}) =>{
     return (
-        <article>
+        <section id="myGames">
             <h2>My Games</h2>
             {games.map((games) => (
                 <ul key={games.id}>
@@ -11,11 +11,11 @@ const MyGames = ({games}) =>{
                     <p>{games.released}</p>
                     <p>{games.genres}</p>
                     <a href={games.link}>
-                        <button>Kjøp Spill</button>
+                        <button>Les mer</button>
                     </a>
                 </ul>
             ))}
-        </article>
+        </section>
     )
 }
 

@@ -13,10 +13,10 @@ export default function MyFavorites(){
         {
             mygames.filter((games) => games.fav === true).slice(0,slice).map((games) => (
                  
-                <>
+                <ul>
                  <li> <h2>{games.title}</h2></li>
                  <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
-                </>
+                </ul>
             ))
         }
         </ul>
