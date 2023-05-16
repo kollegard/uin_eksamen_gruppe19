@@ -1,9 +1,7 @@
 import {store, mygames} from "./games"
 import React,{useState } from 'react';
-export default function MyFavorites(){
-    const [slice,setSlice] = useState(2)
-
-    const showAllFavorites = () => {setSlice(mygames.filter((games)=>games.fav===true).length)}
+export default function MyFavorites({sliceVal}){
+    const [slice,setSlice] = useState(sliceVal)
 
     return(
     <section id="favorites">
@@ -20,6 +18,5 @@ export default function MyFavorites(){
             ))
         }
         </ul>
-        <button id="favoritebtn" onClick={showAllFavorites}>Go to favorites</button>
     </section>    )
 }
