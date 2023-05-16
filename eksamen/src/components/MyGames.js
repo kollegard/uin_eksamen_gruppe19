@@ -8,7 +8,7 @@ const MyGames = ({games}) =>{
                 <ul key={games.id}>
                     <img src={games.img} alt={games.title}/>
                     <h2>{games.title}</h2>
-                    <p>{games.relesed}</p>
+                    <p>{games.released}</p>
                     <p>{games.genres}</p>
                     <a href={games.link}>
                         <button>Kjøp Spill</button>
