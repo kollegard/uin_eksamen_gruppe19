@@ -1,5 +1,16 @@
-body {
-  background-color: aqua;
+nav {
+  background-color: #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+nav ul {
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=main.css.map */
