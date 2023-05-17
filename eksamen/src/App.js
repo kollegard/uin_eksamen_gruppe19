@@ -5,6 +5,7 @@ import Dashboard from './components/Dashboard';
 import GameShop from './components/GameShop';
 import MyGames from './components/MyGames';
 import MyFavorites from './components/MyFavorites';
+import { NavLink } from "react-router-dom";
 
 
 function App() {
@@ -18,9 +19,15 @@ function App() {
     <h3>Logo</h3>
     <ul>
       <li>Home</li>
-      <li>Game Shop</li>
-      <li>My games</li>
-      <li>My favorites</li>
+      <NavLink key={"gameshop"} to={"GameShop"}>
+        <button id="gameshoplinkbtn">Go to gameshop</button>
+      </NavLink>
+      <NavLink key={"mygames"} to={"MyGames"}>
+          <button id="mygameslinkbtn">Go to my games</button>
+        </NavLink>
+        <NavLink key={"fav"} to={"MyFavorites"}>
+          <button id="favnavlinkbtn">Go to favorites</button>
+        </NavLink>
     </ul>
   </nav>
     <main>
@@ -28,7 +35,7 @@ function App() {
        <Route path='/' element={<Dashboard/>}/>
        <Route path='GameShop' element={<GameShop sliceVal={store.filter.length}/>}/>
        <Route path="MyFavorites" element={<MyFavorites sliceVal={mygames.filter((games)=>games.fav===true).length}/>}/>
-       <Route path='MyGames' element={<MyGames games={mygames}/>}/>
+       <Route path='MyGames' element={<MyGames games={mygames} sliceVal={mygames.filter.length}/>}/>
       </Routes>
     </main>
   </>

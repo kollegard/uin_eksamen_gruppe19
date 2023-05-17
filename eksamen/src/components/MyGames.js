@@ -1,9 +1,10 @@
 import React from "react";
+import { mygames } from "./games";
 
 const MyGames = ({games}) =>{
     return (
         <section id="myGames">
-            <h2>My Games</h2>
+            <h2>My Games - {mygames.length}</h2>
             {games.map((games) => (
                 <ul key={games.id}>
                     <h2>{games.title}</h2>
