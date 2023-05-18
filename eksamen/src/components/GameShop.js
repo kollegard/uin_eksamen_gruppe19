@@ -1,10 +1,9 @@
 import {store, mygames} from "./games"
-import MyFavorites from "./MyFavorites"
-import React from 'react';
+import React,{useState} from 'react';
 
 
-export default function GameShop(){
-
+export default function GameShop({sliceVal}){
+    const [slice,setSlice] = useState(sliceVal)
     
 
     return(<>
@@ -14,11 +13,11 @@ export default function GameShop(){
 
         <ul>
         {
-            store.map((games) => (
+            store.slice(0,sliceVal).map((games) => (
                 <>
                 <li> <h2>{games.title}</h2></li>
                 <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
-                <a href={games.link}><button>Kjøp spill</button></a>
+                <a href={games.link}><button>Buy game</button></a>
                 
                 </>
             ))

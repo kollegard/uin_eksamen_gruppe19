@@ -15,6 +15,11 @@ export default function MyFavorites({sliceVal}){
                 <ul key={games.id}>
                  <li> <h2>{games.title}</h2></li>
                  <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
+                 <p>Released: {games.released}</p>
+                 <p>Genre: {games.genres}</p>
+                 <a href={games.link}>
+                    <button>Read more</button>
+                 </a>
                 </ul>
             ))
         }
