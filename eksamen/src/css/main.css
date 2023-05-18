@@ -54,18 +54,6 @@ ul a {
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }
-#myGames ul h2 {
-  width: 100%;
-  grid-area: 1/2;
-}
-#myGames ul p {
-  grid-area: 2/2;
-}
-#myGames ul img {
-  grid-area: 1/1;
-  width: 100%;
-  height: 50%;
-}
 
 #dashboard {
   display: flex;
