@@ -16,16 +16,16 @@ function App() {
     <h3>Logo</h3>
     <ul>
       <NavLink key={"home"} to={"/"}>
-        <a>home</a>
+        home
       </NavLink>
       <NavLink key={"gameshop"} to={"GameShop"}>
-        <a id="gameshoplink">Go to gameshop</a>
+        Go to gameshop
       </NavLink>
       <NavLink key={"mygames"} to={"MyGames"}>
-          <a id="mygameslink">Go to my games</a>
+          Go to my games
         </NavLink>
         <NavLink key={"fav"} to={"MyFavorites"}>
-          <a id="favnavlink">Go to favorites</a>
+         Go to favorites
         </NavLink>
     </ul>
   </nav>
