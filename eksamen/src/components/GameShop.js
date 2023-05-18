@@ -10,8 +10,8 @@ export default function GameShop({sliceVal}){
     return(
 
         <section id="gameShop">
-        <NavLink key={"gameshop"} to={"GameShop"}><button id="gameshoplinkbtn">Go to gameshop</button></NavLink>
-        <h2>Game Shop</h2>
+        <h2>Game Shop</h2><NavLink key={"gameshop"} to={"GameShop"}><button id="gameshoplinkbtn">Go to gameshop</button></NavLink>
+
         <div id="gs">
         {
             
