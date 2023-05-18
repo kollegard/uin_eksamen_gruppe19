@@ -16,7 +16,7 @@ function App() {
     <h3>Logo</h3>
     <ul>
       <NavLink key={"home"} to={"/"}>
-        home
+        Home
       </NavLink>
       <NavLink key={"gameshop"} to={"GameShop"}>
         Gameshop
