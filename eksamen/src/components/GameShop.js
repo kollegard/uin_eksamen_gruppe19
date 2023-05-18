@@ -18,7 +18,7 @@ export default function GameShop({sliceVal}){
 
                 <ul key={games.id}>
 
-                <li> <img src={games.img} alt={bilde for ${games.title}}/> </li>
+                <li> <img src={games.img} alt={`bilde for ${games.title}`}/> </li>
                 <h2>{games.title}</h2>
                 <p>Genre: {games.genres}</p>
                 <a href={games.link}><button>Buy game</button></a>
