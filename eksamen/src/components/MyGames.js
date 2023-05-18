@@ -5,18 +5,17 @@ const MyGames = ({games}) =>{
     return (
         <section id="myGames">
             <h2>My Games - {mygames.length} games</h2>
+            <ul>
             {games.map((games) => (
                 <ul key={games.id}>
-                    <h2>{games.title}</h2>
+                    
                     <li><img src={games.img} alt={games.title}/></li>
-                    <p>Released: {games.released}</p>
+                    <h2>{games.title}</h2>
                     <p>Genre: {games.genres}</p>
-                    <a href={games.link}>
-                        <button>Read more</button>
-                    </a>
+                   
                 </ul>
             ))}
-        </section>
+        </ul></section>
     )
 }
 
