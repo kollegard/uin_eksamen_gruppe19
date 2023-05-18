@@ -81,10 +81,21 @@ ul a {
   justify-content: center;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  #dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 
 #myGamesFavorites {
   display: flex;
   gap: 0px;
+}
+@media (max-width: 768px) {
+  #myGamesFavorites {
+    flex-direction: column;
+  }
 }
 
 #myFavorites {
@@ -97,6 +108,13 @@ aside#favorites {
 }
 aside#favorites h3 {
   padding-left: 35px;
+}
+@media (max-width: 768px) {
+  aside#favorites {
+    border: none;
+    padding-left: 0;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

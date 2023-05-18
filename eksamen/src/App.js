@@ -19,13 +19,13 @@ function App() {
         home
       </NavLink>
       <NavLink key={"gameshop"} to={"GameShop"}>
-        Go to gameshop
+        Gameshop
       </NavLink>
       <NavLink key={"mygames"} to={"MyGames"}>
-          Go to my games
+          My games
         </NavLink>
         <NavLink key={"fav"} to={"MyFavorites"}>
-         Go to favorites
+         Favorites
         </NavLink>
     </ul>
   </nav>
