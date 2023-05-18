@@ -3,7 +3,7 @@ li {
 }
 
 main {
-  background-color: bisque;
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,9 +24,15 @@ nav {
 ul {
   flex-wrap: wrap;
 }
+ul a {
+  color: white;
+  padding-left: 20px;
+  text-decoration: none;
+}
 
 #gs {
   display: flex;
+  background-color: #8e8e8e;
 }
 #gs li {
   display: flex;
@@ -44,9 +50,9 @@ ul {
 
 #myGames ul {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 2fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 10px;
 }
 #myGames ul h2 {
   width: 100%;
@@ -59,6 +65,29 @@ ul {
   grid-area: 1/1;
   width: 100%;
   height: 100%;
+}
+
+#dashboard {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+#myGamesFavorites {
+  display: flex;
+  gap: 0px;
+}
+
+#myFavorites {
+  flex: 1 0 0;
+}
+
+aside#favorites {
+  border-left: solid;
+}
+aside#favorites h3 {
+  padding-left: 35px;
 }
 
 /*# sourceMappingURL=main.css.map */
