@@ -17,7 +17,7 @@ export default function MyFavorites({ sliceVal }) {
               <li key={games.id}>
                 <h2>{games.title}</h2>
                 <img src={games.img} alt={`bilde for ${games.title}`} />
-                
+                <p>Released: {games.released}</p>
                 <p>Genre: {games.genres}</p>
                 <a href={games.link}>
                   <button>Read more</button>
