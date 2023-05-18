@@ -2,20 +2,52 @@ li{
     list-style: none;
 }
 
+main{
+    background-color: bisque;
+display:grid;
+        
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:    "nav nav nav"
+                                " .main."
+                                "section#myGames aside";
+       
+
+                        }
+                        
+
 nav {
+    grid-area: nav nav nav;
     background-color: #2f2f2f;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
     padding: 1rem 4rem;
+} 
 
     ul{
         flex-wrap: wrap;
 
-        li{
-            display: inline-block;
-            margin-left: 2rem;
-        }
+        
     }
+
+
+.gameShop{
+    display: flex;
+   flex-direction: column;
+   grid-area: nav nav nav;
+ 
+   
+    background-color: rgb(94, 17, 153);
+    
 }
+
+section#myGames{
+    grid-area: section;
+}
+section#favorites{
+    grid-area: aside;
+    flex-direction: row;
+}
+

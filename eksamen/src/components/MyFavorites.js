@@ -5,7 +5,7 @@ export default function MyFavorites({sliceVal}){
     const [slice,setSlice] = useState(sliceVal)
 
     return(
-    <section id="favorites">
+    <aside id="favorites">
         <h3>My favorites</h3>
 
         <ul id="favoritelist">
@@ -24,5 +24,5 @@ export default function MyFavorites({sliceVal}){
             ))
         }
         </ul>
-    </section>    )
+    </aside>    )
 }
