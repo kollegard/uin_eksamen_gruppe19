@@ -26,7 +26,7 @@ export default function MyFavorites({ sliceVal }) {
             ))}
         </ul>
         <NavLink key={"fav"} to={"MyFavorites"}>
-          <button id="favnavlinkbtn">Go to favorites</button>
+          <button id="favnavlinkbtn">Favorites</button>
         </NavLink>
       </aside>
     );

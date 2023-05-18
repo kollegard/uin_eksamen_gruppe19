@@ -16,7 +16,7 @@ const MyGames = ({games}) =>{
                 </ul>
             ))}
         <NavLink key={"mygames"} to={"MyGames"}>
-          <button id="mygameslinkbtn">Go to my games</button>
+          <button id="mygameslinkbtn">My games libary</button>
         </NavLink>
         </section>
     )
