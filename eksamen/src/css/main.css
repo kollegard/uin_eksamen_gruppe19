@@ -10,6 +10,15 @@ main {
   gap: 40px;
   padding: 40px;
 }
+main button {
+  border-radius: 6px;
+  color: #fff;
+  background: #2f2f2f;
+  padding: 10px 10px 10px 10px;
+}
+main button .button:hover {
+  background: #cf1111;
+}
 
 nav {
   background-color: #2f2f2f;
@@ -33,6 +42,7 @@ ul a {
 #gs {
   display: flex;
   background-color: #8e8e8e;
+  margin-top: 20px;
 }
 #gs li {
   display: flex;
